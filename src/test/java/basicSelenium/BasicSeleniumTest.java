@@ -22,7 +22,7 @@ public class BasicSeleniumTest {
 
     @BeforeEach
     public void setup(){
-        System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         // implicit
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
